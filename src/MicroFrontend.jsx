@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-const microFrontendsMap = {
+const microFrontendsUrls = {
   "Detail": "http://localhost:8082/dist/detail-component.js",
   "List": "http://localhost:8080/dist/list-component.js"
 }
@@ -17,7 +17,7 @@ export default class MicroFrontend extends Component {
 
     const script = document.createElement('script');
     script.id = scriptId;
-    script.src = microFrontendsMap[componentName];
+    script.src = microFrontendsUrls[componentName];
     script.onload = this.renderMicroFrontend;
     document.head.appendChild(script);
   }
