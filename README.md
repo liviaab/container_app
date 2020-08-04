@@ -1,6 +1,6 @@
 # Container App
 
-This is a React application created with `create-react-app` and is an entrypoint to the rendering of other two microfronends:
+This is a React application created with `create-react-app` and is an entrypoint to the rendering of other two microfrontends:
 
 * [`List`](https://github.com/liviaab/list-component)
 * [`Detail`](https://github.com/liviaab/detail-component)
