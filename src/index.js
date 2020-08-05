@@ -1,22 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import MicroFrontend from './MicroFrontend';
+import TwoColumns from './TwoColumns'
 
-const List = ({ history }) => (
-  <MicroFrontend path={history.location.pathname} componentName="List" />
-)
 
-const Detail = ({ history }) => (
-  <MicroFrontend path={history.location.pathname} componentName="Detail" />
+const TopLevel = ({ history }) => (
+  <TwoColumns leftComponent="List" rightComponent="Detail"  path={history.location.pathname}/>
 )
 
 const App = () => (
   <BrowserRouter>
     <React.Fragment>
       <Switch>
-        <Route exact path="/" component={List} />
-        <Route exact path="/:id" component={Detail} />
+        <Route  path="/" component={TopLevel} />
       </Switch>
     </React.Fragment>
   </BrowserRouter>

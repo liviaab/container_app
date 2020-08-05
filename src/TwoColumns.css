@@ -1,0 +1,10 @@
+.columns-container {
+  display: flex;
+  flex-flow: row;
+  height: 90%;
+}
+
+.columns-container div {
+  width: 50%;
+  margin: 10px;
+}
