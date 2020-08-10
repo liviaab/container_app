@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 const microFrontendsUrls = {
-  "Detail": "http://localhost:8082/dist/detail-component.js",
-  "List": "http://localhost:8080/dist/list-component.js"
+  "Detail": "http://localhost:8080/dist/detail-component.js",
+  "List": "http://localhost:8082/dist/list-component.js"
 }
 
 export default class MicroFrontend extends Component {

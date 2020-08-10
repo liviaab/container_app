@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import MicroFrontend from './MicroFrontend';
+import MicroFrontend from './MicroFrontend.jsx';
 
 const List = ({ history }) => (
   <MicroFrontend path={history.location.pathname} componentName="List" />
